@@ -14,5 +14,18 @@
  ![image](https://github.com/user-attachments/assets/fb190e06-4719-46be-858a-6136694baaf6)
 - From 2010 to 2017, the price of a 3b3b&2F house remained relatively stable. In contrast, the price of 3b3b houses experienced more fluctuation, though no clear trend was evident.
 
+4. The run-time comparison:
+- Original data
+ ![image](https://github.com/user-attachments/assets/d51b5bc0-cb97-4384-b50c-6677ed530734)
+
+- Cache data
+ ![image](https://github.com/user-attachments/assets/1bb5d78e-31ef-4419-98af-543bc2b4270f)
+
+- Parquet data
+  ![image](https://github.com/user-attachments/assets/e9abbc67-77d8-42f7-9881-7ac086474ef0)
+
+- It's obvious that Cache data and Parquet data experience faster runtime than the original data does. It is because of the properties and benefits of cahcing and parquet data format. When query the cached data, it can be retrieved directly from memory and is not needed to be read from disk. Parquet is a columnar storage format specifically designed for efficient data processing.
+
+
   
  
